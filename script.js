@@ -7,7 +7,7 @@ function navigateToSection(sectionId) {
 
 // Add event listeners for nav links
 const navLinks = document.querySelectorAll('nav a');
-avLinks.forEach(link => {
+navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const target = this.getAttribute('href').substring(1);
