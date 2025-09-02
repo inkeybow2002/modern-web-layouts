@@ -12,6 +12,6 @@ navLinks.forEach(link => {
         event.preventDefault();
         const target = this.getAttribute('href').substring(1);
         navigateToSection(target);
-        console.log(`Navigating to section: ${target}`); // Improved log format
+        console.log(`User clicked on link to section: ${target}`); // Improved log clarity
     });
 });
