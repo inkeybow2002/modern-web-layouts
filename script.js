@@ -2,7 +2,12 @@
 
 // Example: Function to handle navigation clicks
 function navigateToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn(`Section with ID '${sectionId}' not found.`); // Added warning for missing sections
+    }
 }
 
 // Add event listeners for nav links
