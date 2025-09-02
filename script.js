@@ -12,10 +12,6 @@ navLinks.forEach(link => {
         event.preventDefault();
         const target = this.getAttribute('href').substring(1);
         navigateToSection(target);
+        console.log('Navigating to: ' + this.getAttribute('href')); // Moved log statement here
     });
-});
-
-// Optionally log navigation actions for debugging
-navLinks.forEach(link => {
-    link.addEventListener('click', () => { console.log('Navigating to: ' + link.getAttribute('href')); });
 });
