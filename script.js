@@ -6,17 +6,17 @@ function navigateToSection(sectionId) {
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     } else {
-        console.warn(`Section with ID '${sectionId}' not found.`); // Added warning for missing sections
+        console.warn(`Navigate to Section: Section with ID '${sectionId}' not found.`); // Added warning for missing sections
     }
 }
 
 // Add event listeners for nav links
 const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => {
+avLinks.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const target = this.getAttribute('href').substring(1);
         navigateToSection(target);
-        console.log(`User clicked on link to section: ${target}`); // Improved log clarity
+        console.log(`Navigation clicked: Link to section '${target}'`); // Improved log clarity
     });
 });
