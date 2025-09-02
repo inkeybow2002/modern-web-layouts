@@ -35,7 +35,7 @@ nav a {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #4CAF50;
+    background-color: #388E3C;  /* Modified for better visibility */
     color: white;
     position: relative;
     bottom: 0;
