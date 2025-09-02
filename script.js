@@ -12,11 +12,11 @@ function navigateToSection(sectionId) {
 
 // Add event listeners for nav links
 const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => { // Fixed typo here
+avLinks.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const target = this.getAttribute('href').substring(1);
         navigateToSection(target);
-        console.log(`Navigation clicked: Link to section '${target}'`); // Improved log clarity
+        console.log(`Navigation clicked: Link to section '${target}' activated.`); // Improved log clarity
     });
 });
